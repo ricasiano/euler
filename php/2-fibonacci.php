@@ -1,5 +1,5 @@
 <?php
-$max = 10;
+$max = 4000000;
 $fibonacciSequence = [1];
 $fibonacci = function (int $previous = 1) use (&$fibonacci, &$fibonacciSequence, $max): array {
     end($fibonacciSequence);

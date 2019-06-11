@@ -23,7 +23,7 @@ def largest_prime_factor(number, counter=2):
         if is_a_factor_of_number(number, counter):
             return round(number / counter)
         counter = counter + 1
-    return 2
+    return 1
 
 
 print(largest_prime_factor(given_number))

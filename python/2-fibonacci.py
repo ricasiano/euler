@@ -1,5 +1,5 @@
 fibonacci = [1, 2]
-max_number = 4000000000000
+max_number = 4000000
 even_fibonacci = []
 pointer = 1
 fibonacci_number = 0

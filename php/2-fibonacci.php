@@ -1,4 +1,6 @@
 <?php
+$time_start = microtime(true);
+
 $max = 4000000;
 $fibonacciSequence = [1];
 $fibonacci = function (int $previous = 1) use (&$fibonacci, &$fibonacciSequence, $max): array {
@@ -27,3 +29,11 @@ $sumOfEvenFibonacci = array_reduce(
 );
 
 echo $sumOfEvenFibonacci;
+
+$time_end = microtime(true);
+
+//dividing with 60 will give the execution time in minutes otherwise seconds
+$execution_time = ($time_end - $time_start)/60;
+
+//execution time of the script
+echo '<b>Total Execution Time:</b> '.number_format((float) $execution_time, 10).' Mins';

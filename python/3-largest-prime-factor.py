@@ -6,9 +6,7 @@ def is_a_factor_of_number(dividend: float, divisor: float):
 
 
 def is_a_prime_number(number: float):
-    if math.sqrt(number).is_integer():
-        return False
-    for counter in range(int(number - 1), 2):
+    for counter in range(2, int(number - 1)):
         if number % counter == 0:
             return False
     return True

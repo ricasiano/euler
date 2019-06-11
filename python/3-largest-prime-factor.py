@@ -18,6 +18,8 @@ def largest_prime_factor(number: float):
             largest_factor = round(number / counter)
             if is_a_prime_number(largest_factor):
                 return largest_factor
+            else:
+                return largest_prime_factor(largest_factor)
     return 1
 
 
